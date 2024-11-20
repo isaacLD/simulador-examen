@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Tabla de Multiplicar</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Generar la Tabla de Multiplicar</h2>
+            <p>Ingrese un número para ver su tabla de multiplicar:</p>
+
+            <div>
+                <label for="numero">Número:</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 5">
+            </div>
+
+            <div>
+                <label for="resultado">Tabla de Multiplicar:</label>
+                <textarea id="resultado" ></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="generarTabla()">Generar Tabla</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

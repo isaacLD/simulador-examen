@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Promedio de Números Mayores a un Límite</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Arreglos.html">
+            <h2>Calcular Promedio de Números Mayores a un Límite</h2>
+
+            <div>
+                <label for="limite">Ingrese el valor límite</label>
+                <input id="limite" type="number" placeholder="Valor límite">
+            </div>
+
+            <div>
+                <label for="numeros">Ingrese los números (separados por coma)</label>
+                <input id="numeros" type="text" placeholder="Ejemplo: 2,4,7,1,9">
+            </div>
+
+            <div>
+                <label for="resultado">El resultado es:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="calcularPromedio()">Calcular</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+    <script src="../../js/Arreglos/arreglos.js"></script>
+</body>
+</html>

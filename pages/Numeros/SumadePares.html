@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Suma de Números Pares</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Sumar todos los Números Pares hasta el Número Dado</h2>
+            <p>Ingrese un número y haga clic en el botón para calcular la suma de todos los números pares desde 1 hasta ese número.</p>
+
+            <div>
+                <label for="limite">Ingrese un número:</label>
+                <input id="limite" type="number" placeholder="Ejemplo: 20">
+            </div>
+
+            <div>
+                <label for="resultado">Resultado de la Suma:</label>
+                <input id="resultado" type="text" >
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="sumarNumerosPares()">Calcular Suma</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

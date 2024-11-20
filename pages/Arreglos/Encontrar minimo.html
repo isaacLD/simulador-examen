@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Encontrar el Número Más Pequeño</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Arreglos.html">
+            <h2>Encontrar el Número Más Pequeño</h2>
+            <p>Encontrar el numero más pequeño de un arreglo</p>
+            <div>
+                <label for="numeros">Ingrese los números (separados por coma)</label>
+                <input id="numeros" type="text" placeholder="Ejemplo: 10,5,7,3,9">
+            </div>
+
+            <div>
+                <label for="resultado">El resultado es:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="encontrarMinimo()">Encontrar</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+    <script src="../../js/Arreglos/arreglos.js"></script>
+</body>
+</html>

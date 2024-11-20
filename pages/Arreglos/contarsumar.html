@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Contar y Sumar Números Positivos y Negativos</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Arreglos.html">
+            <h2>Contar y Sumar Números Positivos y Negativos</h2>
+            <p>Ingrese 10 números para contar cuántos son positivos y negativos, y calcular la suma de cada tipo.</p>
+
+            <div>
+                <label for="numeros">Ingrese 10 números (separados por coma):</label>
+                <input id="numeros" type="text" placeholder="Ejemplo: -3,2,-5,4,1,-8,0,3,-2,-4">
+            </div>
+
+            <div>
+                <label for="resultado">El resultado es:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="contarYSumar()">Calcular</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Arreglos/arreglos.js"></script> 
+</body>
+</html>

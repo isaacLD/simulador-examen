@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operador tiene mayor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+            margin: 0; /* Elimina márgenes por defecto */
+            background-color: #f5f5f5; /* Fondo opcional */
+        }
+        h2 {
+            color: #4682b4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 128, 0.2);
+            animation: bounce 2s infinite;
+        }
+        pre {
+            background-color: #ffebcd;
+            border: 2px solid #ffa07a;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            color: #2f4f4f;
+        }
+        .form-check {
+            text-align: left;
+        }
+        .form-check-label {
+            font-weight: bold;
+            color: #4682b4;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .form-check-label:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #32cd32;
+            border: none;
+            font-size: 1.2rem;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #228b22;
+        }
+        .respuesta-correcta {
+            color: #32cd32;
+        }
+        .respuesta-incorrecta {
+            color: #dc143c;
+        }
+        .form-check-input:checked {
+            background-color: #ff4500 !important; /* Naranja brillante */
+            border-color: #ff4500 !important;
+        }
+        .form-check-input {
+            border: 2px solid #ff8c00;
+        }
+        .form-check-input:hover {
+            border-color: #ff6347;
+        }
+        .resultado {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-2">
+        <!-- Título de la pregunta -->
+        <h2 class="text-center"> Analiza y verifica que valor da esta funcion </h2>
+
+        <pre class="bg-primary-subtle p-1 border rounded text-primary-emphasis">
+            function fibonacci(n) {
+                let a = 0, b = 1, c;
+                if (n === 0) return a;
+                for (let i = 2; i <= n; i++) {
+                    c = a + b;
+                    a = b;
+                    b = c;
+                }
+                return b;
+            }
+            console.log(fibonacci(6));
+        </pre>
+        
+        <h4 class="text-center text-primary-emphasis"> Elige la respuesta correcta.</h4>
+
+        <form id="formularioPregunta" action="./simulador.html" class=" d-flex align-items-center justify-content-center">
+            <div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion1" value="5">
+                    <label class="form-check-label" for="opcion1">a) 8 </label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion2" value="9">
+                    <label class="form-check-label" for="opcion2">b) 13 </label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion3" value="3">
+                    <label class="form-check-label" for="opcion3">c) 5 </label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion4" value="7">
+                    <label class="form-check-label" for="opcion4">d) 21 </label>
+                </div>
+                <!-- Botón para verificar la respuesta -->
+                <button type="button" class="btn btn-primary mt-3" onclick="verificarRespuesta72()">Aceptar</button>
+                <button class="btn btn-danger text-white mt-3" type="submit">Regresar</button>
+            </div>
+            <!-- Sección para mostrar el resultado al mismo nivel de las opciones -->
+            <div id="resultado" class="resultado ms-5 h4"></div>
+        </form>
+    </div>
+    <script src="../../js/simulador.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Contar Dígitos</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Cadenas.html">
+            <h2>Contar Dígitos en una Frase</h2>
+            <p>Ingrese una frase para contar cuántos dígitos contiene:</p>
+
+            <div>
+                <label for="frase">Ingrese una frase:</label>
+                <input id="frase" type="text" placeholder="Ejemplo: Mi número es 1234">
+            </div>
+
+            <div>
+                <label for="resultado">Cantidad de dígitos:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="contarDigitos()">Aceptar</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Cadenas/cadenas.js"></script>
+</body>
+</html>

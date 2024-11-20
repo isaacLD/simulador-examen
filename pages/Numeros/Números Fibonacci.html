@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Serie de Fibonacci</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Generar Serie de Fibonacci</h2>
+            <p>Ingrese un número para ver los primeros n números de la serie de Fibonacci:</p>
+
+            <div>
+                <label for="numero">Número (n):</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 7">
+            </div>
+
+            <div>
+                <label for="resultado">Serie de Fibonacci:</label>
+                <textarea id="resultado" ></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="generarFibonacci()">Generar Serie</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

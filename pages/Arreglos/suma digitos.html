@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Almacenar y Sumar Dígitos de un Número</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Arreglos.html">
+            <h2>Almacenar los Dígitos de un Número y Calcular su Suma</h2>
+            <p>Ingrese un número para almacenar sus dígitos en un arreglo y calcular la suma de esos dígitos.</p>
+
+            <div>
+                <label for="numero">Ingrese el número:</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 12345">
+            </div>
+
+            <div>
+                <label for="resultado">El resultado es:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="sumarDigitos()">Calcular Suma</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Arreglos/arreglos.js"></script>
+</body>
+</html>

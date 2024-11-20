@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Invertir Dígitos de un Número</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Invertir los Dígitos de un Número</h2>
+            <p>Ingrese un número para invertir sus dígitos.</p>
+
+            <div>
+                <label for="numero">Número:</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 1234">
+            </div>
+
+            <div>
+                <label for="resultadoInvertir">Resultado:</label>
+                <textarea id="resultadoInvertir" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="invertirDigitos()">Invertir</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

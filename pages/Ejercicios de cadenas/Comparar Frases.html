@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Comparar Frases</title>
+</head>
+<body>
+    <main>
+        <form id="paresForm" action="Menu Cadenas.html">
+            <h2>Comparar Frases</h2>
+            <p>Comparar 2 frases y decir si son iguales o la primera es mayor que la segunda</p>
+
+            <div>
+                <label for="a">Ingrese la primera frase</label>
+                <input id="a" type="text" placeholder="Ejemplo: Me gusta comer arroz">
+            </div>
+
+            <div>
+                <label for="b">Ingrese la segunda frase</label>
+                <input id="b" type="text" placeholder="Ejemplo: Me gustan los gatos">
+            </div>
+
+            <div>
+                <label for="D">La respuesta es:</label>
+                <textarea id="D"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="CompararFrases()">Aceptar</button>
+                <button type="submit">Regresar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+    </main>
+    <script src="../../js/Cadenas/cadenas.js"></script>
+</body>
+</html>

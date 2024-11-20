@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Total de Compra</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        main {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h4 {
+            text-align: center;
+            color: #007acc;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #007acc;
+        }
+
+        select, input[type="text"], input[type="number"] {
+            padding: 10px;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+        pre {
+            background-color: #7ddbe280;
+            border: 2px solid #7ad9ff;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            color: #2f4f4f;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h4>Escribe un algoritmo como Javascript que genere 10 números y los almacene en un arreglo.<br> Luego recórrelo y presenta el promedio de los números pares del arreglo. </h4>
+
+        <form id="compraForm" action="./simulador.html" >
+
+            <!-- Botón para calcular -->
+            <button type="button" onclick="num_ramdom()">Generar </button>
+            <button class="btn btn-danger text-white mt-3" type="submit">Regresar</button>
+            <!-- Resultados -->
+            <textarea id="resultado" readonly placeholder="Aquí aparecerán los resultados"></textarea>
+        </form>
+    </main>
+    <script src="../../js/simulador.js"> </script>
+</body>
+</html>

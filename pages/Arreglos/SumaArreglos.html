@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Suma de Elementos de Dos Arreglos</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Arreglos.html">
+            <h2>Sumar Elementos de Dos Arreglos</h2>
+            <p>Ingrese dos arreglos de números (con la misma cantidad de elementos), se creará un nuevo arreglo con la suma de los elementos de cada posición.</p>
+
+            <div>
+                <label for="arreglo1">Ingrese el primer arreglo (separados por coma):</label>
+                <input id="arreglo1" type="text" placeholder="Ejemplo: 1,2,3,4,5">
+            </div>
+
+            <div>
+                <label for="arreglo2">Ingrese el segundo arreglo (separados por coma):</label>
+                <input id="arreglo2" type="text" placeholder="Ejemplo: 5,4,3,2,1">
+            </div>
+
+            <div>
+                <label for="resultado">El resultado es:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="sumarArreglos()">Sumar Arreglos</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Arreglos/arreglos.js"></script>
+</body>
+</html>

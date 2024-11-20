@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentar la su suma de numeros</title>
+  <style>
+    /* Estilos generales */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    main {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    main:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+
+    /* Estilos del formulario */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="text"],
+    textarea {
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Botones */
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #007acc;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    button[type="submit"] {
+      background-color: #555;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #333;
+    }
+    
+        
+        
+  
+  </style>
+</head>
+<body>
+  <main>
+    <h1></h1>
+    <form action="./simulador.html">
+        <div>
+         <label>Números del 1 al 50 divisibles por 3 y 7</label> 
+        </div>
+        <label for="resp">Respuesta</label>
+        <textarea id="resp"  placeholder="Aquí va la respuesta"></textarea>
+      </div>
+      <button onclick="calcular()" type="button">Aceptar</button>
+      <button type="submit">Regresar</button>
+    </form>
+  </main>
+  <script src="/js/simulador.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Contar los Dígitos de un Número</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Contar los Dígitos de un Número</h2>
+            <p>Ingrese un número entero positivo para contar cuántos dígitos tiene.</p>
+
+            <div>
+                <label for="numero">Número:</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 12345">
+            </div>
+
+            <div>
+                <label for="resultado">Cantidad de dígitos:</label>
+                <textarea id="resultado" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="contarDigitos()">Contar Dígitos</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

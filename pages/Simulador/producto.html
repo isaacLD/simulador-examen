@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Total de Compra</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        main {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007acc;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #007acc;
+        }
+
+        select, input[type="text"], input[type="number"] {
+            padding: 10px;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calcular Total de Compra</h1>
+        <form id="compraForm" action="./simulador.html" >
+            <!-- Seleccionar producto -->
+            <div>
+                <label for="producto">Seleccione el producto:</label>
+                <select id="producto">
+                    <option value="Producto A">Producto A</option>
+                    <option value="Producto B">Producto B</option>
+                    <option value="Producto C">Producto C</option>
+                    <option value="Producto D">Producto D</option>
+                    <option value="Producto E">Producto E</option>
+                </select>
+            </div>
+            
+            <!-- Ingresar precio y cantidad -->
+            <div>
+                <label for="precio">Precio unitario:</label>
+                <input type="number" id="precio" placeholder="Ingrese el precio" min="0">
+            </div>
+
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" placeholder="Ingrese la cantidad" min="1">
+            </div>
+
+            <!-- Checkbox para IVA -->
+            <div>
+                <label><input type="checkbox" id="iva"> Aplicar IVA (15%)</label>
+            </div>
+
+            <!-- Botón para calcular -->
+            <button type="button" onclick="calcularTotal()">Calcular</button>
+             <button class="btn btn-danger text-white mt-3" type="submit">Regresar</button>
+            <!-- Resultados -->
+            <textarea id="resultado" readonly placeholder="Aquí aparecerán los resultados"></textarea>
+        </form>
+    </main>
+    <script src="../../js/simulador.js"> </script>
+</body>
+</html>

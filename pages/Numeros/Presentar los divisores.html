@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <title>Mostrar Divisores Excluyendo el Propio Número</title>
+</head>
+<body>
+    <main>
+        <form action="Menu Numeros.html">
+            <h2>Mostrar Divisores Excluyendo el Propio Número</h2>
+            <p>Ingrese un número para mostrar sus divisores (excluyendo el propio número):</p>
+
+            <div>
+                <label for="numero">Número:</label>
+                <input id="numero" type="number" placeholder="Ejemplo: 12">
+            </div>
+
+            <div>
+                <label for="resultadoDivisores">Divisores:</label>
+                <textarea id="resultadoDivisores" readonly></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="mostrarDivisores()">Mostrar Divisores</button>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Regresar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/Numeros/numeros.js"></script>
+</body>
+</html>

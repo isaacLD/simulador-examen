@@ -4,185 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador</title>
-    <link rel="stylesheet" href="">
-
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-  
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #0a1733; 
-        color: #ffffff;
-        margin: 0;
-        padding: 20px;
-      }
-  
-      h1 {
-        text-align: center;
-        color: #ffffff;
-        margin-bottom: 30px;
-        margin-block-start: 40px;
-
-      }
-  
-      .grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-  
-      .card {
-        flex: 1 1 calc(20% - 20px);
-        background-color: #1a2e49; 
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        min-height: 180px;
-      }
-  
-      .card:hover {
-        transform: translateY(-5px);
-        background-color: #2b4a6f; 
-      }
-  
-      .card h3 {
-        color: #ffffff;
-        margin-bottom: 15px;
-      }
-  
-      .card p {
-        font-size: 0.9em;
-        color: #b0c4de;
-        margin-bottom: 15px;
-      }
-  
-      .card a {
-        display: inline-block;
-        padding: 10px 15px;
-        background-color: #007bff;
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-      }
-  
-      .card a:hover {
-        background-color: #0056b3;
-      }
-  
-      main {
-        background: #1c2b3a; 
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        max-width: 400px;
-        width: 100%;
-        transition: transform 0.3s ease;
-        margin: 30px auto;
-      }
-  
-      main:hover {
-        transform: translateY(-5px);
-      }
-  
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-  
-      form div {
-        display: flex;
-        flex-direction: column;
-      }
-  
-      label {
-        font-weight: bold;
-        margin-bottom: 5px;
-        font-size: 1rem;
-      }
-  
-      input[type="text"],
-      textarea {
-        padding: 10px;
-        border: 2px solid #ddd;
-        border-radius: 8px;
-        font-size: 1rem;
-        transition: border-color 0.3s ease;
-        background-color: #2a3b4d;
-        color: #ffffff;
-      }
-  
-      input[type="text"]:focus,
-      textarea:focus {
-        border-color: #007acc;
-        outline: none;
-      }
-  
-      textarea {
-        resize: none;
-        height: 100px;
-        font-family: Arial, sans-serif;
-      }
-  
-      
-      button {
-        padding: 12px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #007acc; 
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-  
-      button:hover {
-        background-color: #005fa3;
-      }
-  
-      button[type="submit"] {
-        background-color: #005fa3;
-        margin: auto;
-        margin-left: 140px;
-        margin-top: 30px;
-        margin-block-end: -100px;
-        
-       
-      }
-  
-      button[type="submit"]:hover {
-        background-color: #222;
-      }
-  
-      button[type="reset"] {
-        background-color: #9a031e;
-      }
-  
-      button[type="reset"]:hover {
-        background-color: #7a0216;
-      }
-      
-    
-    </style>
+    <link rel="stylesheet" href="../../css/submenu.css">
 </head>
 <body>
   
-  <form action="../../index.html">
-    <button class="b1" type="submit">Regresar al Menú Principal</button>
-  </form>
-    <h1>Ejercicios de Lógica de Programación</h1>
+  <h1>Ejercicios del Simulador de Moodle</h1>
     <div class="grid">
       <div class="card">
         <h3>Análisis de código</h3>
@@ -292,7 +118,7 @@
       </div>
       <div class="card">
         <h3>Analice el siguiente código</h3>
-        <p>Indique la linea o lines que hace que el algoritmo no funcione correctamente</p>
+        <p>Indique la línea o líneas que hace que el algoritmo no funcione correctamente</p>
         <a href="SumaDigitos.html">Ver Ejercicio</a>
       </div>
       <div class="card">
@@ -327,7 +153,7 @@
       </div>
       <div class="card">
         <h3>Analice el código</h3>
-        <p>Si tienen la siguiente función: funcion valor=Cauadrado(a) valor= a * a fin funcion, ¿qué se obtiene al llamarla con valor=Cuadrado(5)</p>
+        <p>Si tienen la siguiente función: funcion valor=Cuadrado(a) valor= a * a fin funcion, ¿Qué se obtiene al llamarla con valor=Cuadrado(5)</p>
         <a href="llamarFunción.html">Ver Ejercicio</a>
       </div>
       <div class="card">
@@ -403,13 +229,13 @@
       </div>
 
       <div class="card">
-        <h3>entrada, proceso y salida</h3>
-        <p>Cual es el proposito principal de la abstraccion Entrada-proceso-salida en el desarrollo de software?</p>
+        <h3>Entrada, proceso y salida</h3>
+        <p>¿Cuál es el proposito principal de la abstraccion Entrada-proceso-salida en el desarrollo de software?</p>
         <a href="Entrada-Proceso-Salida.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3>Logica de programación</h3>
+        <h3>Lógica de programación</h3>
         <p>En lógica de programación, ¿qué operador tiene mayor prioridad al evaluar una expresión condicional compleja?</p>
         <a href="operador61.html">Ver Ejercicio</a>
       </div>
@@ -428,7 +254,7 @@
 
       <div class="card">
         <h3>Verificar codigo primo</h3>
-        <p>analiza el siguiente codigo y responde correctamente</p>
+        <p>Analiza el siguiente código y responde correctamente</p>
         <a href="verificar64_primo.html">Ver Ejercicio</a>
       </div>
 
@@ -440,7 +266,7 @@
       </div>
 
       <div class="card">
-        <h3> Numero perfecto</h3>
+        <h3> Número perfecto</h3>
         <p>Crea un algoritmo como función en Pseint o Javascript que permite verificar si un número cualquiera es perfecto o no.</p>
         <a href="nume66_perfecto.html">Ver Ejercicio</a>
       </div>
@@ -458,13 +284,13 @@
       </div>
 
       <div class="card">
-        <h3>desarrollo de un modelo abstracto</h3>
+        <h3>Desarrollo de un modelo abstracto</h3>
         <p> ¿Cuál de las siguientes técnicas es fundamental para el desarrollo de un modelo abstracto?</p>
         <a href="modelo69_abstracto.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3>valor sin retorno</h3>
+        <h3>Valor sin retorno</h3>
         <p> ¿Qué sucede si intentamos devolver un valor en una función sin retorno?</p>
         <a href="funcionsin70retorno.html">Ver Ejercicio</a>
       </div>
@@ -488,13 +314,13 @@
       </div>
 
       <div class="card">
-        <h3> condicional simple condicional compuesta</h3>
+        <h3> Condicional simple condicional compuesta</h3>
         <p>¿Cuál es la principal diferencia entre una estructura condicional simple y una estructura condicional compuesta?</p>
         <a href="condicional74_simple.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3> ¿qué describe mejor la fase de "Proceso"?</h3>
+        <h3> ¿Qué describe mejor la fase de "Proceso"?</h3>
         <p>En la metodología de Entrada-Proceso-Salida (E-P-S), ¿qué describe mejor la fase de "Proceso"?</p>
         <a href="fase75_proceso.html">Ver Ejercicio</a>
       </div>
@@ -512,7 +338,7 @@
       </div>
 
       <div class="card">
-        <h3> Que entende por corto circuito?</h3>
+        <h3> ¿Qué entende por corto circuito?</h3>
         <p>¿Qué se entiende por "corto circuito" en una evaluación de una expresión condicional compuesta con operadores lógicos?</p>
         <a href="corto78_circuito.html">Ver Ejercicio</a>
       </div>
@@ -536,25 +362,25 @@
       </div>
 
       <div class="card">
-        <h3> modelo de desarrollo abstracto</h3>
+        <h3> Modelo de desarrollo abstracto</h3>
         <p>En el modelo de desarrollo abstracto ¿Cual es el primer paso para resolver un problema?</p>
         <a href="modelo_abstracto.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3> funcion de programación</h3>
-        <p>¿Cual es el proposito de una funcion en programacion?</p>
+        <h3> Funcion de programación</h3>
+        <p>¿Cuál es el proposito de una función en programacion?</p>
         <a href="funcion_programacion.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3> diagrama de flujo</h3>
+        <h3> Diagrama de flujo</h3>
         <p>¿Cuál es el principal propósito de un diagrama de flujo?</p>
         <a href="Diagrama_flujo.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3> bloque de código</h3>
+        <h3> Bloque de código</h3>
         <p>¿Qué estructura de control permite ejecutar un bloque de código varias veces?</p>
         <a href="bloque_codigo.html">Ver Ejercicio</a>
       </div>
@@ -596,7 +422,7 @@
       </div>
 
       <div class="card">
-        <h3> ¿qué significa "depurar"? </h3>
+        <h3> ¿Qué significa "depurar"? </h3>
         <p> Responde </p>
         <a href="Depurar.html">Ver Ejercicio</a>
       </div>
@@ -614,33 +440,34 @@
       </div>
 
       <div class="card">
-        <h3> declaracion else </h3>
-        <p> Cuál es el propósito de esta declaración? </p>
+        <h3> Declaracion else </h3>
+        <p> ¿Cuál es el propósito de esta declaración? </p>
         <a href="Declaracion_else.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
-        <h3> Que es este simbolo? "==" </h3>
-        <p> representa el simbolo </p>
+        <h3> ¿Qué es este simbolo? "==" </h3>
+        <p> Representa el simbolo </p>
         <a href="Representa_simbolo2.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
         <h3> Etiqueta </h3>
-        <p> Que hace la etiqueta ("a")? </p>
+        <p> ¿Qué hace la etiqueta ("a")? </p>
         <a href="etiqueta_a.html">Ver Ejercicio</a>
       </div>
 
       <div class="card">
         <h3> Declaracion "return" </h3>
-        <p> Que hace esta etiqueta? </p>
+        <p> ¿Qué hace esta etiqueta? </p>
         <a href="declaracion4.html">Ver Ejercicio</a>
       </div>
 
-
-
-
-
     </div>
+    
+    <form action="/index.html">
+      <button type="submit">Regresar al Menú Principal</button>
+    </form>
+
 </body>
 </html>

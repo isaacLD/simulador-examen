@@ -84,6 +84,7 @@ function calcularPromedio() {
 
 
 function encontrarMinimo() {
+    debugger
     let numeros = document.getElementById('numeros').value;
 
     let arreglo = numeros.split(',').map(Number);
@@ -101,6 +102,7 @@ function encontrarMinimo() {
 
 
 function calcularPromedioPares() {
+    debugger
 let numeros = document.getElementById('numeros').value;
 
 let arreglo = numeros.split(',').map(Number);

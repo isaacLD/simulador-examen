@@ -682,10 +682,10 @@ function facturaTotal(){
           return;
         }
         
-        const respuestaCorrecta = 'b';
+        const respuestaCorrecta = 'c';
         
         if (respuestaSeleccionada.value === respuestaCorrecta) {
-          resultadoDiv.innerHTML = '<p class="respuesta-correcta"> 🎉 ¡Correcto! El literal b es la respuesta. 🎉</p>';
+          resultadoDiv.innerHTML = '<p class="respuesta-correcta"> 🎉 ¡Correcto! El literal c es la respuesta. 🎉</p>';
         } else {
           resultadoDiv.innerHTML = '<p class="respuesta-incorrecta">❌ Incorrecto. ¡Vuelve a intentarlo! ❌</p>';
         }
